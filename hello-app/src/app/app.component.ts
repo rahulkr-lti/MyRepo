@@ -11,7 +11,10 @@ import { Component } from '@angular/core';
     </div>
   `,
   styles: [
-    
+    `h1,h2 {
+      font-family: verdana,
+      color: red;
+    }`
   ]
 })
 export class AppComponent {
