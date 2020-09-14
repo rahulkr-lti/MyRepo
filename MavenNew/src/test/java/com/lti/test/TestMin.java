@@ -17,8 +17,12 @@ private Min min;
 	}
 	
 	@Test
-	public void testMax() {
+	public void testMin() {
 		assertEquals(4, min.minimum(4, 6));
 	}
 
+	@Test
+	public void testMax() {
+		assertEquals(6, min.maximum(4, 6));
+	}
 }
