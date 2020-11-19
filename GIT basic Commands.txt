@@ -27,15 +27,15 @@ To add all the new files to git staging area
 >git add -A
 
 
-TO remove all files from git staging area
+To remove all files from git staging area
 >git reset
 
 
-TO remove a file from git staging area to unstaged area
+To remove a file from git staging area to unstaged area
 >git rm filename --cached
 
 
-TO remove a file from git staging area completely
+To remove a file from git staging area completely
 >git rm filename --f
 
 
@@ -64,11 +64,11 @@ To check the staged and unstaged files only
 
 
 To check commit status
->git log				---> tO check the commit status
->git log --stat				---> tO check the commit status in details with statics
->git log --pretty=oneline		--->tO check the commit status in brief
->git log --since=2weeks			--->tO check the commit status for last 2 weeks
->git log --before=2weeks		--->tO check the commit status for before 2 weeks
+>git log				---> to check the commit status
+>git log --stat				---> to check the commit status in details with statics
+>git log --pretty=oneline		--->to check the commit status in brief
+>git log --since=2weeks			--->to check the commit status for last 2 weeks
+>git log --before=2weeks		--->to check the commit status for before 2 weeks
 
 
 To stash git changes i.e. save for later work/push
@@ -92,10 +92,7 @@ To remove last committed changes from git to staging area
 
 
 To remove last committed changes from git to working area
->git reset --hard
-Reset Types
-	- Soft: Remove from commit to staging area
-	- Hard: Remove from commit to working area
+>git reset --hard HEAD~1
 
 
 To link local repository to remote on GitHub
