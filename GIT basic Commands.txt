@@ -1,0 +1,147 @@
+To list all the git commands
+>git help
+
+
+To check git installation 
+>git --version or git version
+
+
+To check git config details like logged in account etc.
+>git config --list
+
+
+To login into git account from CLI
+>git config --global user.name "username"
+>git config --global user.email "user email"
+
+
+To initialise a directory as a git repo
+>git init
+
+
+To add a file into git staging area
+>git add filename
+
+
+To add all the new files to git staging area
+>git add -A
+
+
+TO remove all files from git staging area
+>git reset
+
+
+TO remove a file from git staging area to unstaged area
+>git rm filename --cached
+
+
+TO remove a file from git staging area completely
+>git rm filename --f
+
+
+To see diff of what is changed but not staged
+>git diff
+
+
+To see diff of what is staged but not yet commited
+>git diff --staged or git diff --cached
+
+
+To commit the changes in git staging with message
+>git commit -m "Commit message"
+
+
+To change the commit message
+>git commit --amend -m "New commit message"
+
+
+To check the files or changes in staging area
+>git status
+
+
+To check the staged and unstaged files only
+>git status -s
+
+
+To check commit status
+>git log				---> tO check the commit status
+>git log --stat				---> tO check the commit status in details with statics
+>git log --pretty=oneline		--->tO check the commit status in brief
+>git log --since=2weeks			--->tO check the commit status for last 2 weeks
+>git log --before=2weeks		--->tO check the commit status for before 2 weeks
+
+
+To stash git changes i.e. save for later work/push
+>git stash
+
+
+To list all the stash changes
+>git stash list
+
+
+To work in the stashed file
+>git stash apply
+
+
+To drop the stash files
+>git stash drop
+
+
+To remove last committed changes from git to staging area
+>git reset --soft HEAD~1
+
+
+To remove last committed changes from git to working area
+>git reset --hard
+Reset Types
+	- Soft: Remove from commit to staging area
+	- Hard: Remove from commit to working area
+
+
+To link local repository to remote on GitHub
+>git remote add origin "https://github.com/username/reponame.git"
+
+
+To push committed changes to remote repository
+>git push -u origin master
+
+
+To clone an existing git repo
+>git clone https://github.com/username/reponame.git
+
+
+To pull git remote repo for merging changes into local
+>git pull origin master
+
+
+To check branches in local git repo
+>git branch
+
+
+To create separate branch
+>git branch branchname
+
+
+To switch between branches
+>git checkout branchname
+
+
+To merge branch into master
+>git merge branchname
+
+
+To delete a branch
+>git branch -d branchname
+
+
+To check branch status on remote
+>git branch -a
+
+
+To delete branch from remote repo
+>git push origin --delete branchname
+
+
+To abandon changes made to a branch
+>git checkout filename
+
